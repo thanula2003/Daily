@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOREACH METHOD
+    </title>
+</head>
+<body>
+    
+    <script>
+
+        let nums = [1,2,3,4,5];
+
+        nums.forEach(x =>{
+            console.log(x);
+        });
+
+        nums.forEach(x => {
+            console.log(x*2)
+        });
+
+        nums.forEach(x => {
+            console.log(x*10)
+        });
+
+        console.log()
+
+        nums.forEach((x,i,nums)=> {         // use () when there are multiple arguments(x,i,nums)
+            console.log(x,i,nums)           // i = index
+        });
+
+    </script>
+</body>
+</html>

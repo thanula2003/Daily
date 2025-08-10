@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALLBACKS</title>
+</head>
+<body>
+    <h1 id=txt1></h1>
+    <h1 id=txt2></h1>
+    <h1 id="txt3"></h1>
+
+    <button id="btn">CLICK</button>
+
+    <script>
+
+        let X = "A";
+        let Y = "B";
+        let Z = "C";
+        let C = "D"
+
+        const txt1 = document.getElementById("txt1");
+        const txt2 = document.getElementById("txt2");
+        const txt3 = document.getElementById("txt3");
+        const btn  = document.getElementById("btn");
+
+        btn.onclick = function()
+        {
+            Q(R);
+            W();
+            E();
+            
+            
+
+
+            function Q(callback)
+            {
+                console.log(X);
+                 callback();
+            }
+
+            function W()
+            {
+                console.log(Y);
+            }
+
+            function E()
+            {
+                console.log(Z);
+            }
+
+            function R()
+            {
+                console.log(C)
+            }
+       }
+
+    </script>
+</body>
+</html>
